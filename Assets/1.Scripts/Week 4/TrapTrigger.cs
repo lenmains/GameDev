@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TrapTrigger : MonoBehaviour
 {
     public BoxCollider2D bc;
     public GameObject player;
+    public TMP_Text console;
 
     private void Awake()
     {
@@ -19,7 +21,7 @@ public class TrapTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 player.transform.position = new Vector3(-32, 2, 0);
-                Debug.Log("A trap has happened!!", gameObject);
+                console.text = "You have been Killed by a trap.";
             }
         }
     }
