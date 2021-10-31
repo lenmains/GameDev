@@ -13,7 +13,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - Minimap
@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 1267889335
+    locked: 0
   - name: Radar
     uniqueID: 184185107
+    locked: 0
+  - name: GlowObjects
+    uniqueID: 403567319
     locked: 0
